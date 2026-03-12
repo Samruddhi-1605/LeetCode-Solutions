@@ -15,7 +15,7 @@ class Solution {
 			//Add the node and call for its list of reachable nodes 
             path.add(fromNode);
             findPaths(graph,graph[fromNode][i],path,ans);
-            path.remove(path.size()-1);
+            path.remove(path.size()-2);
         }
         return;
     }
